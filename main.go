@@ -1,15 +1,15 @@
 package main
 
 import (
+	"interview/BackendAPIHumanCapital/internal/configs"
+	"interview/BackendAPIHumanCapital/internal/handlers"
+	"interview/BackendAPIHumanCapital/internal/models"
+	"interview/BackendAPIHumanCapital/internal/repository"
+	"interview/BackendAPIHumanCapital/internal/services"
+	internalsql "interview/BackendAPIHumanCapital/pkg/internalSql"
 	"log"
 
 	"github.com/gin-gonic/gin"
-	"main.go/intranal/configs"
-	"main.go/intranal/handlers"
-	"main.go/intranal/models"
-	"main.go/intranal/repository"
-	"main.go/intranal/services"
-	"main.go/pkg/internalsql"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 
 	err := configs.Init(
 		configs.WithConfigFolder(
-			[]string{"./intranal/configs/"},
+			[]string{"./internal/configs/"},
 		),
 		configs.WithConfigFile("config"),
 		configs.WithConfigType("yaml"),

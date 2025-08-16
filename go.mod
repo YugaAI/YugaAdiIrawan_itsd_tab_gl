@@ -1,4 +1,4 @@
-module main.go
+module interview/BackendAPIHumanCapital
 
 go 1.23.1
 

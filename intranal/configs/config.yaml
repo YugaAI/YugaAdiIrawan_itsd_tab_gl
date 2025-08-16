@@ -1,4 +1,0 @@
-service:
-  port: ":3000"
-database:
-  dataSourceName: "postgres://postgres:postgres@localhost:5432/ciputraLife_db?sslmode=disable"
