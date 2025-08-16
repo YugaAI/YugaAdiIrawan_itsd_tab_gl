@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: ciputraLife
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ciputraLife_db
+    volumes:
+    - G:/interview/BackendAPIHumanCapital/YugaAdiIrawan_itsd_tab_gl/db_data:/var/lib/postgresql/data
+  
